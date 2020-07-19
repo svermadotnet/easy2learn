@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlipActivity">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipType="vertical"
+        app:flipFrom="front"
+        app:autoFlipBack="true"
+        app:autoFlipBackTime="1000"
+        android:layout_gravity="center">
+
+        <!-- Back Layout Goes Here -->
+        <!-- <include layout="@layout/flash_card_layout_back"/> -->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/card_back"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:src="@drawable/card_front"/>
+
+        <!-- Front Layout Goes Here -->
+        <!-- <include layout="@layout/flash_card_layout_front"/> -->
+
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>

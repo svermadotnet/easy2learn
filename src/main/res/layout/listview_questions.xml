@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:layout_marginTop="8dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question Description"
+        android:id="@+id/txtQuestion"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true" />
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff">
+
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/btnDelete"
+            android:src="@drawable/ic_delete_black_24dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/colorTransparentWhite" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/upperLinearLayout"
+            android:background="#ffffff"
+            android:layout_toRightOf="@+id/btnDelete"
+            android:padding="5dp" android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/option1"
+                android:text="Option 1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/option2"
+                android:text="Option 2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_toRightOf="@+id/btnDelete"
+            android:layout_below="@+id/upperLinearLayout"
+            android:padding="5dp" android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/option3"
+                android:text="Option 3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/option4"
+                android:text="Option 4" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
